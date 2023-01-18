@@ -1,6 +1,8 @@
 @extends( "layouts.master" )
 
+@section( "title" , "Új Termék" )
 @section( "content" )
+    
 
 @if( $errors->any() )
     <ul>
@@ -11,6 +13,7 @@
         @endforeach
     </ul>
 @endif
+
 
 <form action="add-perfume" method="post">
     @csrf
